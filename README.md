@@ -1,6 +1,6 @@
 <div align="center">
 
-# Adaptive Digital Communication System with BER Optimization
+# ADAPTIVE DIGITAL COMMUNICATION SYSTEM WITH BER OPTIMIZATION
 
 **Real-time adaptive wireless communication simulator built on Arduino + Python**
 
@@ -18,7 +18,7 @@
 
 ---
 
-## What this project does
+## What This Project Does
 
 Two Arduino boards communicate over Bluetooth while simulating real-world wireless impairments:
 
@@ -39,7 +39,7 @@ Two Arduino boards communicate over Bluetooth while simulating real-world wirele
                                                  └──────────────────────────┘
 ```
 
-### Key capabilities
+### Key Capabilities
 
 | Feature | Details |
 |---|---|
@@ -53,7 +53,7 @@ Two Arduino boards communicate over Bluetooth while simulating real-world wirele
 
 ---
 
-## Repository structure
+## Repository Structure
 
 ```
 Adaptive_Hardware/
@@ -81,7 +81,7 @@ Adaptive_Hardware/
 
 ---
 
-## Hardware requirements
+## Hardware Requirements
 
 | Component | Qty | Notes |
 |---|---|---|
@@ -96,7 +96,7 @@ Adaptive_Hardware/
 
 ## Wiring
 
-### Both Arduinos share the same pinout
+### Both Arduinos Share the Same Pinout
 
 | Arduino Pin | Connected to |
 |---|---|
@@ -112,7 +112,7 @@ Adaptive_Hardware/
 
 > **HC-05 note:** The module RX pin is 3.3 V tolerant. Put a voltage divider (1 kΩ + 2 kΩ) on the Arduino TX → module RX line to avoid damage.
 
-### Bluetooth pairing
+### Bluetooth Pairing
 
 Before first use, configure one module as **Master** and one as **Slave** via AT commands. The default pairing PIN is `1234` or `0000`. The Master module auto-connects to the Slave on power-up — the LED changes from fast-blink to slow-blink when linked.
 
@@ -120,14 +120,14 @@ Before first use, configure one module as **Master** and one as **Slave** via AT
 
 ## Installation
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/adaptive-hardware.git
-cd adaptive-hardware
+git clone https://github.com/geranimoekia/adaptive-digital-communication-system-with-ber-optimization.git
+cd adaptive-digital-communication-system-with-ber-optimization
 ```
 
-### 2. Install Python dependencies
+### 2. Install Python Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -142,7 +142,7 @@ pip install dash plotly pyserial
 
 </details>
 
-### 3. Flash the Arduino firmware
+### 3. Flash the Arduino Firmware
 
 1. Open **Arduino IDE 2.x** ([download](https://www.arduino.cc/en/software)).
 2. Open `TX/TX.ino`, select the correct board and port, click **Upload**.
@@ -154,7 +154,7 @@ Both sketches use only built-in Arduino libraries (`LiquidCrystal`, `SoftwareSer
 
 ## Configuration
 
-### Python — set your COM ports
+### Python — Set Your COM Ports
 
 Open `adapt.py` (dual USB) or `adapt1.py` (single USB) and update the port constants near the top:
 
@@ -197,7 +197,7 @@ The dashboard connects within a few seconds and all charts begin updating in rea
 
 ---
 
-## Dashboard overview
+## Dashboard Overview
 
 ### Tab 1 — Live Status
 Real-time message flow (TX original → noisy channel → RX raw → FEC decoded) with per-bit error highlighting. Hero strip shows BER, link health, active modulation, and SNR. Controls let you change SNR, FEC scheme, and channel model on the fly.
@@ -218,7 +218,7 @@ Colour-coded events (INFO / WARN / CRIT) for every modulation switch, BER zone c
 
 ---
 
-## How the adaptive algorithm works
+## How the Adaptive Algorithm Works
 
 ```
 Every 1 second:
@@ -235,7 +235,7 @@ Every 1 second:
 
 ---
 
-## Serial protocol
+## Serial Protocol
 
 All messages are newline-terminated. Binary bytes are hex-encoded to keep the line protocol clean.
 
