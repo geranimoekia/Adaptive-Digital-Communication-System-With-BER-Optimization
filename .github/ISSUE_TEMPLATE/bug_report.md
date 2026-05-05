@@ -12,8 +12,7 @@ A clear and concise description of what the bug is.
 **Component affected**
 - [ ] TX Arduino firmware (`TX/TX.ino`)
 - [ ] RX Arduino firmware (`RX/RX.ino`)
-- [ ] Python dashboard (`adapt.py`)
-- [ ] Python dashboard single-port (`adapt1.py`)
+- [ ] Python dashboard (`dashboard.py`)
 - [ ] Hardware / wiring
 
 **To reproduce**

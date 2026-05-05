@@ -29,7 +29,7 @@ Two Arduino boards communicate over Bluetooth while simulating real-world wirele
 ```
 ┌─────────────────┐         USB Serial          ┌──────────────────────────┐
 │  Python Dashboard│◄───────────────────────────►│      TX Arduino          │
-│  (adapt.py)      │         COM5                │  TX.ino  │  20×4 LCD    │
+│  (dashboard.py)  │         COM5                │  TX.ino  │  20×4 LCD    │
 └─────────────────┘                              └──────────┼───────────────┘
                                                             │  Bluetooth (HC-05)
                                                             │
@@ -57,8 +57,7 @@ Two Arduino boards communicate over Bluetooth while simulating real-world wirele
 
 ```
 Adaptive_Hardware/
-├── adapt.py              # Dashboard — dual USB serial (TX + RX both connected)
-├── adapt1.py             # Dashboard — single USB serial (RX relayed via Bluetooth)
+├── dashboard.py          # Python web dashboard
 ├── requirements.txt      # Python dependencies
 ├── TX/
 │   └── TX.ino            # Arduino firmware for the transmitter
@@ -71,13 +70,6 @@ Adaptive_Hardware/
 │   └── PULL_REQUEST_TEMPLATE.md
 └── LICENSE
 ```
-
-**Which dashboard script to use:**
-
-| Scenario | Script |
-|---|---|
-| Both Arduinos plugged into PC via USB | `adapt.py` |
-| Only TX plugged in, RX runs standalone (BT relay) | `adapt1.py` |
 
 ---
 
@@ -156,17 +148,10 @@ Both sketches use only built-in Arduino libraries (`LiquidCrystal`, `SoftwareSer
 
 ### Python — Set Your COM Ports
 
-Open `adapt.py` (dual USB) or `adapt1.py` (single USB) and update the port constants near the top:
+Open `dashboard.py` and update the port constants near the top:
 
 ```python
-# adapt.py
-RX_PORT   = "COM7"   # ← your RX Arduino port
-TX_PORT   = "COM5"   # ← your TX Arduino port
-BAUD_RATE = 9600
-```
-
-```python
-# adapt1.py
+# dashboard.py
 TX_PORT   = "COM5"   # ← your TX Arduino port
 BAUD_RATE = 9600
 ```
@@ -186,9 +171,7 @@ python -c "import serial.tools.list_ports; [print(p) for p in serial.tools.list_
 3. Start the dashboard:
 
 ```bash
-python adapt.py
-# or
-python adapt1.py
+python dashboard.py
 ```
 
 4. Open your browser at **http://127.0.0.1:8050**

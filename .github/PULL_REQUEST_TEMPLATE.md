@@ -6,7 +6,7 @@
 
 - [ ] TX firmware (`TX/TX.ino`)
 - [ ] RX firmware (`RX/RX.ino`)
-- [ ] Python dashboard (`adapt.py` / `adapt1.py`)
+- [ ] Python dashboard (`dashboard.py`)
 - [ ] Documentation
 
 ## Testing
