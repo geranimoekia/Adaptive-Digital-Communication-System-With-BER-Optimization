@@ -123,7 +123,7 @@ Before first use, configure one module as **Master** and one as **Slave** via AT
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/geranimoekia/adaptive-digital-communication-system-with-ber-optimization.git
+git clone https://github.com/geranimoekia/Adaptive-Digital-Communication-System-With-BER-Optimization.git
 cd adaptive-digital-communication-system-with-ber-optimization
 ```
 
