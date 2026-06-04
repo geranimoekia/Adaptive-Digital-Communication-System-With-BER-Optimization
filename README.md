@@ -1,4 +1,12 @@
 <div align="center">
+![Banner](https://capsule-render.vercel.app/api?type=waving&color=0:0F0C29,100:24243E&height=200&section=header&text=AdaptComm&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Adaptive+Wireless+Communication+on+Arduino&descAlignY=56&descAlign=50)
+
+
+
+> A full wireless communication link on two Arduinos — noise injection, forward error correction, and adaptive modulation switching from BPSK to 16QAM based on live BER. Every metric streams to a Python dashboard in real time.
+
+![Last Commit](https://img.shields.io/github/last-commit/geranimoekia/Adaptive-Digital-Communication-System-With-BER-Optimization?style=for-the-badge&color=0e75b6)
+![License](https://img.shields.io/github/license/geranimoekia/Adaptive-Digital-Communication-System-With-BER-Optimization?style=for-the-badge&color=brightgreen)
 
 # ADAPTIVE DIGITAL COMMUNICATION SYSTEM WITH BER OPTIMIZATION
 
