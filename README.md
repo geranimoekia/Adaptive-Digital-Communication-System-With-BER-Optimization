@@ -16,6 +16,15 @@
 
 </div>
 
+
+## Tech Stack
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Plotly Dash](https://img.shields.io/badge/Plotly_Dash-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+![Bluetooth](https://img.shields.io/badge/Bluetooth_(HC--05)-0082FC?style=for-the-badge&logo=bluetooth&logoColor=white)
+
 ---
 
 ## What This Project Does
@@ -236,13 +245,6 @@ All messages are newline-terminated. Binary bytes are hex-encoded to keep the li
 
 ---
 
-## Tech Stack
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Plotly Dash](https://img.shields.io/badge/Plotly_Dash-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
-![Bluetooth](https://img.shields.io/badge/Bluetooth_(HC--05)-0082FC?style=for-the-badge&logo=bluetooth&logoColor=white)
 
 ## Dependencies
 
