@@ -3,7 +3,7 @@
 
 
 
-> A full wireless communication link on two Arduinos — noise injection, forward error correction, and adaptive modulation switching from BPSK to 16QAM based on live BER. Every metric streams to a Python dashboard in real time.
+> A full wireless communication link on two Arduinos - noise injection, forward error correction, and adaptive modulation switching from BPSK to 16QAM based on live BER. Every metric streams to a Python dashboard in real time.
 
 ![Last Commit](https://img.shields.io/github/last-commit/geranimoekia/Adaptive-Digital-Communication-System-With-BER-Optimization?style=for-the-badge&color=0e75b6)
 ![License](https://img.shields.io/github/license/geranimoekia/Adaptive-Digital-Communication-System-With-BER-Optimization?style=for-the-badge&color=brightgreen)
@@ -20,7 +20,7 @@
 
 <br/>
 
-> Simulate a full wireless communication link — noise injection, forward error correction, adaptive modulation — and watch every metric update live in a web dashboard, all driven by real Arduino hardware over Bluetooth.
+> Simulate a full wireless communication link - noise injection, forward error correction, adaptive modulation - and watch every metric update live in a web dashboard, all driven by real Arduino hardware over Bluetooth.
 
 </div>
 
@@ -98,7 +98,7 @@ Adaptive_Hardware/
 | HC-05 or HC-06 Bluetooth module | 2 | Paired as master / slave |
 | 20×4 parallel LCD display | 2 | Standard HD44780 |
 | USB cable | 1 (min) | TX must connect to PC |
-| Jumper wires | — | |
+| Jumper wires | - | |
 | External 5 V supply (optional) | 1 | To run RX standalone |
 
 ---
@@ -123,7 +123,7 @@ Adaptive_Hardware/
 
 ### Bluetooth Pairing
 
-Before first use, configure one module as **Master** and one as **Slave** via AT commands. The default pairing PIN is `1234` or `0000`. The Master module auto-connects to the Slave on power-up — the LED changes from fast-blink to slow-blink when linked.
+Before first use, configure one module as **Master** and one as **Slave** via AT commands. The default pairing PIN is `1234` or `0000`. The Master module auto-connects to the Slave on power-up - the LED changes from fast-blink to slow-blink when linked.
 
 ---
 
@@ -157,13 +157,13 @@ pip install dash plotly pyserial
 2. Open `TX/TX.ino`, select the correct board and port, click **Upload**.
 3. Repeat with `RX/RX.ino` on the second board.
 
-Both sketches use only built-in Arduino libraries (`LiquidCrystal`, `SoftwareSerial`) — no Library Manager installs needed.
+Both sketches use only built-in Arduino libraries (`LiquidCrystal`, `SoftwareSerial`) - no Library Manager installs needed.
 
 ---
 
 ## Configuration
 
-### Python — Set Your COM Ports
+### Python - Set Your COM Ports
 
 Open `dashboard.py` and update the port constants near the top:
 
@@ -199,21 +199,21 @@ The dashboard connects within a few seconds and all charts begin updating in rea
 
 ## Dashboard Overview
 
-### Tab 1 — Live Status
+### Tab 1 - Live Status
 Real-time message flow (TX original → noisy channel → RX raw → FEC decoded) with per-bit error highlighting. Hero strip shows BER, link health, active modulation, and SNR. Controls let you change SNR, FEC scheme, and channel model on the fly.
 
-### Tab 2 — Signal Analysis
+### Tab 2 - Signal Analysis
 - BER vs Time (raw + EMA-smoothed overlay)
 - SNR vs BER scatter against theoretical BPSK / QPSK / 16QAM curves
 - Throughput vs SNR
 - Live constellation diagram matching the active modulation
 
-### Tab 3 — Diagnostics
+### Tab 3 - Diagnostics
 - FEC performance comparison across all three schemes
 - AWGN vs Rayleigh channel impact on BER
 - Modulation zone timeline
 
-### Tab 4 — Event Log
+### Tab 4 - Event Log
 Colour-coded events (INFO / WARN / CRIT) for every modulation switch, BER zone crossing, and connection event. Filterable by severity.
 
 ---
@@ -268,7 +268,7 @@ Arduino libraries: `LiquidCrystal` and `SoftwareSerial` (both bundled with Ardui
 
 ## Contributing
 
-Bug reports and feature requests are welcome — use the issue templates.  
+Bug reports and feature requests are welcome - use the issue templates.  
 For code contributions, open a pull request using the PR template.
 
 ---
