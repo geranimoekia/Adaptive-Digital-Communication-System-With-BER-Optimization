@@ -1,5 +1,5 @@
 <div align="center">
-![Banner](https://capsule-render.vercel.app/api?type=waving&color=0:0F0C29,100:24243E&height=200&text=AdaptComm&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Adaptive+Wireless+Communication+on+Arduino&descAlignY=56&descAlign=50)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0%3A0F0C29%2C100%3A24243E&height=200&text=AdaptComm&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Adaptive%20Wireless%20Communication%20on%20Arduino&descAlignY=56&descAlign=50" width="100%" alt="AdaptComm Banner" />
 
 
 
