@@ -3,7 +3,7 @@
 
 
 
-> A full wireless communication link on two Arduinos - noise injection, forward error correction, and adaptive modulation switching from BPSK to 16QAM based on live BER. Every metric streams to a Python dashboard in real time.
+> A full wireless communication link on two Arduinos(with LCDs) - noise injection, forward error correction, and adaptive modulation switching from BPSK to 16QAM based on live BER. Every metric streams to a Python dashboard in real time.
 
 ![Last Commit](https://img.shields.io/github/last-commit/geranimoekia/Adaptive-Digital-Communication-System-With-BER-Optimization?style=for-the-badge&color=0e75b6)
 ![License](https://img.shields.io/github/license/geranimoekia/Adaptive-Digital-Communication-System-With-BER-Optimization?style=for-the-badge&color=brightgreen)
