@@ -20,7 +20,7 @@
 
 <br/>
 
-> Simulate a full wireless communication link - noise injection, forward error correction, adaptive modulation - and watch every metric update live in a web dashboard, all driven by real Arduino hardware over Bluetooth.
+> Simulate a full wireless communication link - noise injection, forward error correction, adaptive modulation and watch every metric update live in a web dashboard, all driven by real Arduino hardware over Bluetooth.
 
 </div>
 
