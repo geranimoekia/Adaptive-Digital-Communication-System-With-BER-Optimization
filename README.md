@@ -273,6 +273,31 @@ For code contributions, open a pull request using the PR template.
 
 ---
 
+## Troubleshooting
+
+### Python dependencies fail to install
+
+Make sure Python 3.9 or later is installed. If the installation command fails, try:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### The dashboard cannot connect to the Arduino
+
+1. Check which COM port the transmitter Arduino is using by running:
+
+   ```bash
+   python -c "import serial.tools.list_ports; [print(p) for p in serial.tools.list_ports.comports()]"
+   ```
+
+2. Update the `TX_PORT` setting in `dashboard.py` to match the transmitter's actual COM port.
+3. Ensure the transmitter Arduino is connected via USB and that both Bluetooth modules are powered and paired correctly.
+
+### The dashboard does not display data
+
+Confirm that both Arduino boards are powered, the Bluetooth modules are paired, and the transmitter's COM port is configured correctly before restarting the dashboard.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
